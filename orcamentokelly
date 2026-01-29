@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Produção Musical | Rato Teclas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .glass-panel {
+            background: rgba(20, 20, 20, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f2d06b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border {
+            border-color: #d4af37;
+        }
+        .gold-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #aa892c 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-x-hidden bg-black">
+
+    <!-- Background Image com Overlay -->
+    <div class="fixed inset-0 z-0">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105" 
+             style="background-image: url('https://instagram.fssa3-1.fna.fbcdn.net/v/t51.82787-15/514742247_18362722546147901_1472853246428776670_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzY2ODg1NjA3MTQ4MTUxOTM3MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=2QjNKgo5CIIQ7kNvwEkt8f6&_nc_oc=AdmvYci1bj8JUer3L0DWpKU7PSVDw6buDV7aFL0tm0qXDKLk3AERPBJwj_1cQDkuBS44_dTz4fTKVP8lgWgmco2I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fssa3-1.fna&_nc_gid=eMVZLc-TgQriqHzySwCsJw&oh=00_AfogLsiJfZVFVOMx6yhI7FWv-uR_jOpWggI501ajeA7B_A&oe=698197F7');">
+        </div>
+        <!-- Camada escura para legibilidade -->
+        <div class="absolute inset-0 bg-black/80 z-10"></div>
+    </div>
+
+    <!-- Container Principal -->
+    <main class="relative z-20 w-full max-w-3xl glass-panel rounded-2xl shadow-2xl overflow-hidden text-gray-100 animate-fade-in-up">
+        
+        <!-- Cabeçalho -->
+        <header class="p-8 text-center border-b border-white/10 relative">
+            <div class="absolute top-0 left-0 w-full h-1 gold-bg"></div>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-wider uppercase mb-2">Rato Teclas</h1>
+            <p class="text-xs md:text-sm text-gray-400 tracking-[0.3em] uppercase">Music Production • Helber Macêdo</p>
+        </header>
+
+        <!-- Informações do Cliente -->
+        <div class="px-8 py-6 bg-white/5">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">Proposta elaborada para</p>
+                    <h2 class="text-2xl serif-font text-white">Kelly Fontteli</h2>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">Data da emissão</p>
+                    <p class="text-white font-mono" id="date">29 de Janeiro, 2026</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Escopo do Trabalho -->
+        <div class="p-8">
+            <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                <i data-lucide="music-4" class="text-yellow-500"></i>
+                <span class="gold-gradient font-bold">Pacote de Produção Musical Completa</span>
+            </h3>
+            
+            <p class="text-gray-300 mb-8 leading-relaxed text-sm text-justify">
+                Esta proposta contempla a realização artística e técnica integral de sua obra fonográfica. O processo é tratado como um produto único, garantindo coesão desde a concepção dos arranjos até a entrega final do áudio.
+            </p>
+
+            <!-- Lista de Serviços -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <!-- Item -->
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                    <i data-lucide="mic-2" class="text-yellow-500 mt-1 w-5 h-5"></i>
+                    <div>
+                        <h4 class="font-bold text-white">Captação e Gravação</h4>
+                        <p class="text-xs text-gray-400">Estúdio profissional e engenharia de som.</p>
+                    </div>
+                </div>
+                 <!-- Item -->
+                 <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                    <i data-lucide="piano" class="text-yellow-500 mt-1 w-5 h-5"></i>
+                    <div>
+                        <h4 class="font-bold text-white">Produção de Teclados</h4>
+                        <p class="text-xs text-gray-400">Arranjos e execução por Rato Teclas.</p>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                    <i data-lucide="users" class="text-yellow-500 mt-1 w-5 h-5"></i>
+                    <div>
+                        <h4 class="font-bold text-white">Músicos Contratados</h4>
+                        <p class="text-xs text-gray-400">Custeio integral de banda de apoio necessária.</p>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                    <i data-lucide="sliders" class="text-yellow-500 mt-1 w-5 h-5"></i>
+                    <div>
+                        <h4 class="font-bold text-white">Mixagem</h4>
+                        <p class="text-xs text-gray-400">Equilíbrio, timbragem e processamento.</p>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                    <i data-lucide="wand-2" class="text-yellow-500 mt-1 w-5 h-5"></i>
+                    <div>
+                        <h4 class="font-bold text-white">Afinação Vocal</h4>
+                        <p class="text-xs text-gray-400">Correção melódica (Melodyne/Auto-Tune) precisa.</p>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex items-start gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors">
+                    <i data-lucide="disc-3" class="text-yellow-500 mt-1 w-5 h-5"></i>
+                    <div>
+                        <h4 class="font-bold text-white">Masterização</h4>
+                        <p class="text-xs text-gray-400">Finalização para plataformas digitais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-white/10 mb-8">
+
+            <!-- Preço -->
+            <div class="bg-gradient-to-r from-gray-900 to-black p-6 rounded-xl border border-yellow-500/30 flex flex-col md:flex-row justify-between items-center text-center md:text-left shadow-lg">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xs font-bold text-yellow-500 uppercase tracking-widest block mb-1">Investimento Total</span>
+                    <span class="text-xs text-gray-400 block max-w-xs">Pacote único incluindo todas as etapas, cachês de músicos e horas de estúdio.</span>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <span class="text-4xl md:text-5xl font-bold text-white tracking-tighter">R$ 5.500<span class="text-lg text-gray-400 font-normal">,00</span></span>
+                </div>
+            </div>
+            
+            <p class="text-center text-xs text-gray-500 mt-4 italic">
+                * Este valor refere-se ao pacote fechado. Não há individualização de custos por etapa.
+            </p>
+
+            <!-- Botão de Ação -->
+            <div class="mt-10 text-center">
+                <button onclick="window.print()" class="gold-bg text-black font-bold py-4 px-10 rounded-full hover:brightness-110 transition-all shadow-[0_0_20px_rgba(212,175,55,0.4)] uppercase tracking-wider text-sm flex items-center gap-2 mx-auto">
+                    <i data-lucide="printer"></i>
+                    Imprimir ou Salvar PDF
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-black/40 p-6 text-center border-t border-white/10">
+            <h4 class="text-white font-bold mb-1">Helber Macêdo (Rato Teclas)</h4>
+            <p class="text-gray-500 text-xs">Produção Musical Profissional</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Inicializar ícones
+        lucide.createIcons();
+        
+        // Atualizar data automaticamente se desejar, ou manter fixo
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').innerText = new Date().toLocaleDateString('pt-BR', options);
+    </script>
+</body>
+</html>
